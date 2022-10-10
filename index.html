@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <!-- Rating state start -->
+  <div class="container">
+    <div class="main-container">
+      <img src="images/icon-star.svg" alt="" class="star-icon">
+      <div class="text-container">
+        <h1 class="main-text">
+          How did we do?
+        </h1>
+        <p class="bottom-text">Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </div>  
+      <div class="button-container">
+        <button id="choice-1" class="btn">1</button>
+        <button id="choice-2" class="btn">2</button>
+        <button id="choice-3" class="btn">3</button>
+        <button id="choice-4" class="btn">4</button>
+        <button id="choice-5" class="btn">5</button>
+      </div>
+      <button id="submit" class="submit-btn">Submit</button>
+    </div>
+    <div class="thank-container hidden">
+      <img src="images/illustration-thank-you.svg" alt="" class="thank-you">
+      <p class="selection">
+        You selected
+        <span id="rating"></span>
+        out of 5</p>
+      <h2>Thank you!</h2>
+      <p class="goodbye-msg">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don't hesitate to get in touch!</p>
+    </div>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Drago</a>.
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
